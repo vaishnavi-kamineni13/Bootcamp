@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<label>First Name:<input name="First Name" type="text" placeholder="John" required></label>
+		<label>Second Name:<input name="Last Name" type="text" placeholder="Smith" required></label>
+		<p>
+			<label>Male:<input type="radio" name="gender" value="male"></label>
+			<label>Female:<input type="radio" name="gender" value="female"></label>
+			<label>Other:<input type="radio" name="gender" value="other"></label>
+		</p>
+		<p>
+			<label>Email:<input type="email" placeholder="your email"  name="email" required></label>
+			<label>Password:<input type="password" placeholder="your password" name="password" pattern=".{5,10}" required title="5 to 10 characters"></label>
+		</p>
+		<p>
+			<label>
+				Birthday:
+				<select>
+					<option>Month</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+				</select>
+				<select>
+					<option>Day</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+				</select>
+				<select>
+					<option>Year</option>
+					<option>1999</option>
+					<option>2000</option>
+					<option>2001</option>
+				</select>
+			</label>
+		</p>
+		<p>
+			<label for="check">I agree to the terms and conditions:</label>
+			<input id="check" type="checkbox" name="agreed">
+		</p>
+
+
+
+		<input type="submit">
+	</form>
+
+
+</body>
+</html>
